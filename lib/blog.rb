@@ -22,14 +22,14 @@ class Blog < Sinatra::Base
         end
 
         # Add article to list of articles
-        articles << article end
+        articles << article 
     end
 
-# Sort articles by date, display new articles first 
-articles.sort_by! { |article| article.date }
-articles.reverse!
+    # Sort articles by date, display new articles first 
+    articles.sort_by! { |article| article.date }
+    articles.reverse!
 
-get '/' do 
-    erb :index
-end 
+    get '/' do 
+        erb :index
+    end 
 end
