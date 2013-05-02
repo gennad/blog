@@ -11,3 +11,4 @@ elsif Blog.production?
 end
 
 run Blog
+#run Sinatra::Application
